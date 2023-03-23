@@ -1,27 +1,28 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { src = '/astronaut-hero-img.webp' } = Astro.props
+const { src = '/hero-img.png' } = Astro.props
 ---
 
-<section class="hero my-24">
+<section class="hero my-10">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-          <slot><span class="text-gradient">Accessible</span> Starter for Astro</slot>
+          <slot><span class="text-gradient">A Hora do</span> Código</slot>
         </h1>
+        <p class="text-center text-lg md:text-left lg:text-1xl">
+          <slot>
+            Transformando vidas através da programação!
+          </slot>
+        </p>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
-            <Icon pack="ion" name="star-outline" />
-            Star on GitHub
-          </a>
           <a
-            class="button has-icon color-secondary"
-            href="https://github.com/markteekman/accessible-astro-starter/blob/main/README.md"
+            class="button has-icon"
+            href="https://youtu.be/dQw4w9WgXcQ"
           >
             <Icon pack="ion" name="bookmark-outline" />
-            Read the Docs
+            Saiba mais
           </a>
         </div>
       </div>
