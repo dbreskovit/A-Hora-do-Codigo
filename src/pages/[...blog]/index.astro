@@ -36,7 +36,9 @@ const metadata = merge(
     },
     openGraph: {
       type: 'article',
-      ...(image ? { images: [{ url: image, width: (image as ImageMetadata)?.width, height: (image as ImageMetadata)?.height }] } : {}),
+      ...(image
+        ? { images: [{ url: image, width: (image as ImageMetadata)?.width, height: (image as ImageMetadata)?.height }] }
+        : {}),
     },
   },
   { ...(post?.metadata ? { ...post.metadata, canonical: post.metadata?.canonical || url } : {}) }
@@ -44,6 +46,7 @@ const metadata = merge(
 ---
 
 <Layout metadata={metadata}>
+
   <SinglePost post={{ ...post, image: image }} url={url} />
   <ToBlogLink />
   <RelatedPosts post={post} />

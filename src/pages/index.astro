@@ -4,7 +4,6 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -13,125 +12,122 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'A Hora do Código',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
   <Hero
+  
     actions={[
       {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        variant: 'secondary',
+        text: 'Saiba Mais',
+        href: '#features',
+        icon: 'tabler:chevron-down',
       },
-      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero.jpg', alt: 'Hero Image' }}
+    isBoxed
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      <span class="hidden sm:inline"> A Hora do Código: </span> Não Entre em Pânico, Comece a <span
+        class="text-accent dark:text-white highlight"
+      >
+        Programar</span
+      >!
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages
-      & Blogs.
+      Projeto do
+      <span class="hidden xl:inline">Instituto Federal Farroupilha Campus Frederico Westphalen</span>
+      <span class="inline xl:hidden">IFFar-FW</span>
+      que tem como objetivo incentivar a prática de programação e a resolução de problemas.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
-
   <Note />
 
   <!-- Features Widget *************** -->
-
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Projeto de Ensino"
+    title= "A Hora do Código"
+    subtitle= "Nossa missão é de incentivar a prática de programação e a resolução de problemas. Para isso, buscamos promover ações como as listadas abaixo."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Monitorias de Programação',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Mobilizar um grupo de alunos para realização de monitorias de programação.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Plataforma do Projeto',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+        'Manter um site atualizado com informações sobre o projeto e disponibilizar materiais de apoio.',
+        icon: 'tabler:world-www',
       },
       {
-        title: 'Best Practices',
+        title: 'Desafios e Competições',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Desafiar os alunos em testar seus conhecimentos e habilidades.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Oficinas e Workshops',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Promover oficinas e workshops para a comunidade escolar.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Laboratórios de Informática',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Manter organizado e em condições de uso os laboratórios de informática utilizados para atividades práticas.',
+        icon: 'tabler:device-desktop',
+      },
+      {
+        title: 'Certificações',
+        description:
+          'Certificar alunos participantes para computo de Atividades Complementares de Curso.',
+        icon: 'tabler:award',
       },
     ]}
   />
 
   <!-- Content Widget **************** -->
-
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Monitorias"
+    title="Aprenda com outros Alunos"
     items={[
+      
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Tirar dúvidas',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Você pode tirar dúvidas sobre conteúdos e linguagens de programação.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Resolver Exercícios',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Você recebe suporte para resolução dos exercícios propostos pelos professores.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Trabalhar em Projetos',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Você pode trabalhar em projetos pessoais ou de disciplinas com o apoio de outros alunos.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1537111261224-6fa49cecda2f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Laptop Coding Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-       Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> Monitorias de Programação </h3>
+      As monitorias de programação são encontros semanais realizados por alunos bolsistas e voluntários que desejam compartilhar seus conhecimentos com outros alunos.
     </Fragment>
 
     <Fragment slot="bg">
@@ -140,180 +136,76 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-
   <Content
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Desafios de Laços de Repetição',
+        description: 'Problemas que envolvem a utilização de estruturas de repetição (for, while, do-while).'
       },
       {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+        title: 'Desafios de Estruturas Condicionais',
+        description: 'Problemas que envolvem a utilização de estruturas condicionais (if, else, switch).'
       },
       {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+        title: 'Desafios de Vetores e Matrizes',
+        description: 'Problemas que envolvem a utilização de vetores e matrizes.'
       },
       {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: 'Desafios de Estruturas de Dados',
+        description: 'Problemas que envolvem a utilização de estruturas de dados (pilhas, filas, listas).'
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1687603863378-0761c86232bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Coding Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> Desafios de Programação </h3>
+      Exercite suas habilidades de programação resolvendo desafios propostos na plataforma do projeto.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Steps Widget ****************** -->
-
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Conheça Novas Tecnologias com Nossas Oficinas de Programação"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: '1° Passo: <span class="font-medium">Inscrição</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          'Se atente ao calendário de oficinas e faça sua inscrição. Fique ligado nas notícias do projeto para não perder nenhuma oportunidade.',
+        icon: 'tabler:user-check',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: '2° Passo: <span class="font-medium">Participação</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+        'Participe das oficinas no horário e local marcado. A presença é obrigatória para obtenção de certificado.',
+        icon: 'tabler:calendar-event',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: '3° Passo: <span class="font-medium">Por em Prática</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Ponha em prática o que aprendeu! não esqueça de compartilhar seu resultado no GitHub. Lembre-se: A prática leva a perfeição. ツ',
+        icon: 'tabler:code',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Certificado!',
+        icon: 'tabler:award',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+        src: 'images/image-technologies.png',
+        alt: 'Technologies Image',
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
   <!-- HighlightedPosts Widget ******* -->
-
   <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
@@ -323,77 +215,62 @@ const metadata = {
   />
 
   <!-- FAQs Widget ******************* -->
-
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Perguntas Frequentes (FAQs)"
+    subtitle="Aqui estão algumas perguntas frequentes sobre o projeto."
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'O que é a Hora do Código?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'A Hora do Código é um projeto de ensino do IFFar-FW que tem como objetivo incentivar a prática de programação e a resolução de problemas.',
+        },
+      {
+        title: 'Quem pode participar?',
+        description:
+          'Qualquer aluno do IFFar-FW pode participar das atividades do projeto. As monitorias são abertas para toda a comunidade escolar.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Como faço para participar das monitorias?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'As monitorias são realizadas semanalmente. Fique atento ao calendário de monitorias e participe das que forem de seu interesse.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Como faço para participar das oficinas?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'As oficinas são divulgadas no site do projeto. Fique atento ao calendário de oficinas e participe das que forem de seu interesse.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Como faço para obter certificado?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'A presença nas atividades do projeto é obrigatória para obtenção de certificado. Fique atento ao calendário de atividades.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Onde encontro mais informações?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Você pode encontrar mais informações sobre o projeto no site do projeto. Fique atento às notícias e novidades.',
       },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
-
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Acessar',
+        href: 'https://github.com/',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:brand-github',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Quer saber mais sobre o site do projeto? <br class="hidden md:inline" />Acesse o repositório no GitHub.
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+     O site é um projeto de código aberto. Portanto, você pode contribuir com sugestões, correções e melhorias.
     </Fragment>
   </CallToAction>
 </Layout>

@@ -11,6 +11,7 @@ export interface Props {
   content?: string;
   actions?: string | CallToAction[];
   image?: string | any; // TODO: find HTMLElementProps
+  isBoxed?: boolean;
 }
 
 const {
@@ -21,10 +22,11 @@ const {
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
   image = await Astro.slots.render('image'),
+  isBoxed,
 } = Astro.props;
 ---
 
-<section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
+<section class={`relative md:-mt-[76px] not-prose ${isBoxed ? 'boxed' : ''}`} {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
@@ -90,3 +92,10 @@ const {
     </div>
   </div>
 </section>
+<style>
+  .boxed {
+    background-image: linear-gradient(var(--aw-color-boxes) 1.3px, transparent 1.3px),
+      linear-gradient(to right, var(--aw-color-boxes) 1.3px, var(--aw-color-bg-page) 1.3px);
+    background-size: 3rem 3rem;
+  }
+</style>

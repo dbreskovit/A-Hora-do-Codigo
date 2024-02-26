@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name:                       Hora do Código
+  site: 'http://localhost:4321'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: A Hora do Código
+    template: '%s — A Hora do Código'
+  description: 'Projeto do Instituto Federal Farroupilha Campus Frederico Westphalen que tem como objetivo incentivar a prática de programação e a resolução de problemas.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: A Hora do Código
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -74,7 +74,7 @@ ui:
   tokens:
     default:
       fonts:
-        sans: InterVariable
+        sans: Roboto
         serif: var(--ph-font-sans)
         heading: var(--ph-font-sans)
       colors:

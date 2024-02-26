@@ -1,9 +1,10 @@
 {
   "name": "a-hora-do-codigo",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
-  "version": "1.0.0-beta.17",
+  "description": "Site do Projeto de Ensino A Hora do Código",
+  "version": "1.0",
   "scripts": {
     "dev": "astro dev",
+    "host": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -17,6 +18,8 @@
     "@astrolib/analytics": "^0.5.0",
     "@astrolib/seo": "^1.0.0-beta.5",
     "@fontsource-variable/inter": "^5.0.16",
+    "@fontsource/montserrat": "^5.0.16",
+    "@fontsource/roboto": "^5.0.8",
     "astro": "^4.2.6",
     "astro-icon": "^1.0.3",
     "limax": "4.1.0",
