@@ -8,7 +8,6 @@ import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -20,12 +19,11 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero
-  
     actions={[
       {
         variant: 'secondary',
         text: 'Saiba Mais',
-        href: '#features',
+        href: '#projeto',
         icon: 'tabler:chevron-down',
       },
     ]}
@@ -53,45 +51,40 @@ const metadata = {
 
   <!-- Features Widget *************** -->
   <Features
-    id="features"
+    id="projeto"
     tagline="Projeto de Ensino"
-    title= "A Hora do Código"
-    subtitle= "Nossa missão é de incentivar a prática de programação e a resolução de problemas. Para isso, buscamos promover ações como as listadas abaixo."
+    title="A Hora do Código"
+    subtitle="Nossa missão é de incentivar a prática de programação e a resolução de problemas. Para isso, buscamos promover ações como as listadas abaixo."
     items={[
       {
         title: 'Monitorias de Programação',
-        description:
-          'Mobilizar um grupo de alunos para realização de monitorias de programação.',
+        description: 'Mobilizar um grupo de alunos para realização de monitorias de programação.',
         icon: 'tabler:school',
       },
       {
-        title: 'Plataforma do Projeto',
+        title: 'Plataforma',
         description:
-        'Manter um site atualizado com informações sobre o projeto e disponibilizar materiais de apoio.',
+          'Disponibilizar um site atualizado com informações sobre o projeto e materiais de apoio para estudo.',
         icon: 'tabler:world-www',
       },
       {
         title: 'Desafios e Competições',
-        description:
-          'Desafiar os alunos em testar seus conhecimentos e habilidades.',
+        description: 'Desafiar os alunos em testar seus conhecimentos e habilidades.',
         icon: 'tabler:rocket',
       },
       {
         title: 'Oficinas e Workshops',
-        description:
-          'Promover oficinas e workshops para a comunidade escolar.',
+        description: 'Promover oficinas e workshops para a comunidade escola durante o ano letivo.',
         icon: 'tabler:code',
       },
       {
         title: 'Laboratórios de Informática',
-        description:
-          'Manter organizado e em condições de uso os laboratórios de informática utilizados para atividades práticas.',
+        description: 'Manter organizado e em condições de uso os laboratórios utilizados para atividades práticas.',
         icon: 'tabler:device-desktop',
       },
       {
         title: 'Certificações',
-        description:
-          'Certificar alunos participantes para computo de Atividades Complementares de Curso.',
+        description: 'Certificar alunos participantes para computo de Atividades Complementares de Curso.',
         icon: 'tabler:award',
       },
     ]}
@@ -100,24 +93,21 @@ const metadata = {
   <!-- Content Widget **************** -->
   <Content
     isReversed
+    id="monitorias"
     tagline="Monitorias"
     title="Aprenda com outros Alunos"
     items={[
-      
       {
         title: 'Tirar dúvidas',
-        description:
-          'Você pode tirar dúvidas sobre conteúdos e linguagens de programação.',
+        description: 'Você pode tirar dúvidas sobre conteúdos e linguagens de programação.',
       },
       {
         title: 'Resolver Exercícios',
-        description:
-          'Você recebe suporte para resolução dos exercícios propostos pelos professores.',
+        description: 'Você recebe suporte para resolução dos exercícios propostos pelos professores.',
       },
       {
         title: 'Trabalhar em Projetos',
-        description:
-          'Você pode trabalhar em projetos pessoais ou de disciplinas com o apoio de outros alunos.',
+        description: 'Você pode trabalhar em projetos pessoais ou de disciplinas com o apoio de outros alunos.',
       },
     ]}
     image={{
@@ -126,8 +116,9 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> Monitorias de Programação </h3>
-      As monitorias de programação são encontros semanais realizados por alunos bolsistas e voluntários que desejam compartilhar seus conhecimentos com outros alunos.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Monitorias de Programação</h3>
+      As monitorias de programação são encontros semanais realizados por alunos bolsistas e voluntários que desejam compartilhar
+      seus conhecimentos com outros alunos.
     </Fragment>
 
     <Fragment slot="bg">
@@ -138,22 +129,23 @@ const metadata = {
   <!-- Content Widget **************** -->
   <Content
     isAfterContent
+    id="desafios"
     items={[
       {
         title: 'Desafios de Laços de Repetição',
-        description: 'Problemas que envolvem a utilização de estruturas de repetição (for, while, do-while).'
+        description: 'Problemas que envolvem a utilização de estruturas de repetição (for, while, do-while).',
       },
       {
         title: 'Desafios de Estruturas Condicionais',
-        description: 'Problemas que envolvem a utilização de estruturas condicionais (if, else, switch).'
+        description: 'Problemas que envolvem a utilização de estruturas condicionais (if, else, switch).',
       },
       {
         title: 'Desafios de Vetores e Matrizes',
-        description: 'Problemas que envolvem a utilização de vetores e matrizes.'
+        description: 'Problemas que envolvem a utilização de vetores e matrizes.',
       },
       {
         title: 'Desafios de Estruturas de Dados',
-        description: 'Problemas que envolvem a utilização de estruturas de dados (pilhas, filas, listas).'
+        description: 'Problemas que envolvem a utilização de estruturas de dados (pilhas, filas, listas).',
       },
     ]}
     image={{
@@ -162,7 +154,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> Desafios de Programação </h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Desafios de Programação</h3>
       Exercite suas habilidades de programação resolvendo desafios propostos na plataforma do projeto.
     </Fragment>
 
@@ -171,9 +163,9 @@ const metadata = {
     </Fragment>
   </Content>
 
-
   <!-- Steps Widget ****************** -->
   <Steps
+    id="oficinas"
     title="Conheça Novas Tecnologias com Nossas Oficinas de Programação"
     items={[
       {
@@ -185,7 +177,7 @@ const metadata = {
       {
         title: '2° Passo: <span class="font-medium">Participação</span>',
         description:
-        'Participe das oficinas no horário e local marcado. A presença é obrigatória para obtenção de certificado.',
+          'Participe das oficinas no horário e local marcado. A presença é obrigatória para obtenção de certificado.',
         icon: 'tabler:calendar-event',
       },
       {
@@ -200,22 +192,21 @@ const metadata = {
       },
     ]}
     image={{
-        src: 'images/image-technologies.png',
-        alt: 'Technologies Image',
+      src: 'images/image-technologies.png',
+      alt: 'Technologies Image',
     }}
   />
 
   <!-- HighlightedPosts Widget ******* -->
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    title="Encontre muito mais conteúdos em nosso Blog"
+    information={`Acesse o blog do projeto a Hora do Código para encontrar mais conteúdos sobre programação, dicas, tutoriais e muito mais.
                 `}
   />
 
   <!-- FAQs Widget ******************* -->
   <FAQs
+    id="faqs"
     title="Perguntas Frequentes (FAQs)"
     subtitle="Aqui estão algumas perguntas frequentes sobre o projeto."
     classes={{ container: 'max-w-6xl' }}
@@ -223,32 +214,22 @@ const metadata = {
       {
         title: 'O que é a Hora do Código?',
         description:
-          'A Hora do Código é um projeto de ensino do IFFar-FW que tem como objetivo incentivar a prática de programação e a resolução de problemas.',
-        },
+          'É um projeto de ensino do IFFar-FW que está na sua 8a edição e que tem como objetivo incentivar a prática de programação e a resolução de problemas.',
+      },
       {
         title: 'Quem pode participar?',
         description:
-          'Qualquer aluno do IFFar-FW pode participar das atividades do projeto. As monitorias são abertas para toda a comunidade escolar.',
+          'Qualquer aluno do IFFar-FW pode participar das atividades do projeto, tanto do ensino médio, quanto da graduação. As monitorias são abertas para toda a comunidade escolar.',
       },
       {
         title: 'Como faço para participar das monitorias?',
         description:
-          'As monitorias são realizadas semanalmente. Fique atento ao calendário de monitorias e participe das que forem de seu interesse.',
+          'As monitorias são realizadas semanalmente nos laboratórios de informática. Fique atento ao calendário de monitorias',
       },
       {
         title: 'Como faço para participar das oficinas?',
         description:
-          'As oficinas são divulgadas no site do projeto. Fique atento ao calendário de oficinas e participe das que forem de seu interesse.',
-      },
-      {
-        title: 'Como faço para obter certificado?',
-        description:
-          'A presença nas atividades do projeto é obrigatória para obtenção de certificado. Fique atento ao calendário de atividades.',
-      },
-      {
-        title: 'Onde encontro mais informações?',
-        description:
-          'Você pode encontrar mais informações sobre o projeto no site do projeto. Fique atento às notícias e novidades.',
+          'As oficinas são divulgadas no site do projeto e nas redes sociais. Fique atento às notícias e novidades.',
       },
     ]}
   />
@@ -266,11 +247,11 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Quer saber mais sobre o site do projeto? <br class="hidden md:inline" />Acesse o repositório no GitHub.
+      Quer saber mais sobre o nosso site? <br class="hidden md:inline" />Acesse o repositório no GitHub.
     </Fragment>
 
     <Fragment slot="subtitle">
-     O site é um projeto de código aberto. Portanto, você pode contribuir com sugestões, correções e melhorias.
+      O site é um projeto de código aberto. Portanto, você pode contribuir com sugestões, correções e melhorias.
     </Fragment>
   </CallToAction>
 </Layout>
