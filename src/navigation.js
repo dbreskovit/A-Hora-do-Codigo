@@ -55,35 +55,39 @@ export const headerData = {
     {
       text: 'Oficinas',
       links: [
+        // {
+        //   text: 'Oficina Python',
+        //   //href: getPermalink('/landing/lead-generation'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina React',
+        //   //href: getPermalink('/landing/sales'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina Node.js',
+        //   //href: getPermalink('/landing/click-through'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina Angular',
+        //   //href: getPermalink('/landing/product'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina PHP',
+        //   //href: getPermalink('/landing/pre-launch'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina Javascript',
+        //   //href: getPermalink('/landing/subscription'),
+        //   href: getPermalink('#'),
+        // },
         {
-          text: 'Oficina Python',
-          //href: getPermalink('/landing/lead-generation'),
-          href: getPermalink('#'),
-        },
-        {
-          text: 'Oficina React',
-          //href: getPermalink('/landing/sales'),
-          href: getPermalink('#'),
-        },
-        {
-          text: 'Oficina Node.js',
-          //href: getPermalink('/landing/click-through'),
-          href: getPermalink('#'),
-        },
-        {
-          text: 'Oficina Angular',
-          //href: getPermalink('/landing/product'),
-          href: getPermalink('#'),
-        },
-        {
-          text: 'Oficina PHP',
-          //href: getPermalink('/landing/pre-launch'),
-          href: getPermalink('#'),
-        },
-        {
-          text: 'Oficina Javascript',
-          //href: getPermalink('/landing/subscription'),
-          href: getPermalink('#'),
+          text: 'Dicas E Conceitos Para Melhores Resultados Na BugCup',
+          href: getPermalink('/landing/dicas-bugcup'),
         },
       ],
     },
@@ -94,14 +98,14 @@ export const headerData = {
           text: 'Todos os Posts',
           href: getBlogPermalink(),
         },
-        {
-          text: 'Categoria',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tags',
-          href: getPermalink('astro', 'tag'),
-        },
+        // {
+        //   text: 'Categoria',
+        //   href: getPermalink('tutorials', 'category'),
+        // },
+        // {
+        //   text: 'Tags',
+        //   href: getPermalink('astro', 'tag'),
+        // },
         // {
         //   text: 'Article',
         //   href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
@@ -164,8 +168,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-     { text: 'Termos de Uso', href: getPermalink('/terms') },
-     { text: 'Privacidade', href: getPermalink('/privacy') },
+    { text: 'Termos de Uso', href: getPermalink('/terms') },
+    { text: 'Privacidade', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
