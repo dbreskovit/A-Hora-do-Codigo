@@ -1,0 +1,29 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+const metadata = {
+  title: 'Dicas E Conceitos Para Melhores Resultados Na BugCup',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero2
+    tagline="Git Essentials"
+    title="Introdução ao Git e Ferramentas de Versionamento"
+    subtitle="Aprenda os conceitos básicos do Git e como utilizá-lo para versionar seus projetos."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Inscreva-se',
+        href: 'https://abre.ai/oficinagit24',
+        icon: 'tabler:square-rounded-arrow-right'
+      },
+    ]}
+    image={{
+      src: '/images/git-workshop.png',
+      alt: 'Ilustração de um workshop de Git',
+    }}
+  />
+</Layout>
