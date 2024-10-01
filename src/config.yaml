@@ -1,6 +1,6 @@
 site:
   name: Hora do Código
-  site: 'http://localhost:4321'
+  site: 'https://ahoradocodigo.com'
   base: '/'
   trailingSlash: false
 

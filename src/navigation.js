@@ -80,13 +80,13 @@ export const headerData = {
         //   //href: getPermalink('/landing/pre-launch'),
         //   href: getPermalink('#'),
         // },
-        // {
-        //   text: 'Oficina Javascript',
-        //   //href: getPermalink('/landing/subscription'),
-        //   href: getPermalink('#'),
-        // },
+         {
+           text: 'Oficina de Git',
+           //href: getPermalink('/landing/subscription'),
+           href: getPermalink('/landing/git-essentials'),
+         },
         {
-          text: 'Dicas E Conceitos Para Melhores Resultados Na BugCup',
+          text: 'Oficina para BugCup',
           href: getPermalink('/landing/dicas-bugcup'),
         },
       ],
@@ -175,7 +175,7 @@ export const footerData = {
     // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/dbreskovit/A-Hora-do-Codigo' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: ` © ` + new Date().getFullYear() + ` · A Hora do Código · Todos os direitos reservados.`,
