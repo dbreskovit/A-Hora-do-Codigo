@@ -1,0 +1,29 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+const metadata = {
+  title: 'Dicas E Conceitos Para Melhores Resultados Na BugCup',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero2
+    tagline="Python Essentials"
+    title="Conceitos básicos de programação com Python"
+    subtitle="Aprenda os conceitos básicos de programação com Python e como utilizá-lo para resolver problemas."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Inscreva-se',
+        href: 'https://abre.ai/oficinapython24',
+        icon: 'tabler:square-rounded-arrow-right'
+      },
+    ]}
+    image={{
+      src: '/images/python-workshop.jpg',
+      alt: 'Ilustração de um workshop de Python',
+    }}
+  />
+</Layout>

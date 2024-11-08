@@ -52,50 +52,12 @@ export const headerData = {
         // },
       ],
     },
-    {
-      text: 'Oficinas',
-      links: [
-        // {
-        //   text: 'Oficina Python',
-        //   //href: getPermalink('/landing/lead-generation'),
-        //   href: getPermalink('#'),
-        // },
-        // {
-        //   text: 'Oficina React',
-        //   //href: getPermalink('/landing/sales'),
-        //   href: getPermalink('#'),
-        // },
-        // {
-        //   text: 'Oficina Node.js',
-        //   //href: getPermalink('/landing/click-through'),
-        //   href: getPermalink('#'),
-        // },
-        // {
-        //   text: 'Oficina Angular',
-        //   //href: getPermalink('/landing/product'),
-        //   href: getPermalink('#'),
-        // },
-        // {
-        //   text: 'Oficina PHP',
-        //   //href: getPermalink('/landing/pre-launch'),
-        //   href: getPermalink('#'),
-        // },
-         {
-           text: 'Oficina de Git',
-           //href: getPermalink('/landing/subscription'),
-           href: getPermalink('/landing/git-essentials'),
-         },
-        {
-          text: 'Oficina para BugCup',
-          href: getPermalink('/landing/dicas-bugcup'),
-        },
-      ],
-    },
+
     {
       text: 'Blog',
       links: [
         {
-          text: 'Todos',
+          text: 'Todos os Posts',
           href: getBlogPermalink(),
         },
         // {
@@ -116,56 +78,89 @@ export const headerData = {
         // },
       ],
     },
+    {
+      text: 'Oficinas Realizadas',
+      links: [
+        {
+          text: 'Oficina Python',
+          href: getPermalink('/landing/python-essentials'),
+        },
+        // {
+        //   text: 'Oficina React',
+        //   //href: getPermalink('/landing/sales'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina Node.js',
+        //   //href: getPermalink('/landing/click-through'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina Angular',
+        //   //href: getPermalink('/landing/product'),
+        //   href: getPermalink('#'),
+        // },
+        // {
+        //   text: 'Oficina PHP',
+        //   //href: getPermalink('/landing/pre-launch'),
+        //   href: getPermalink('#'),
+        // },
+        {
+          text: 'Oficina de Git',
+          //href: getPermalink('/landing/subscription'),
+          href: getPermalink('/landing/git-essentials'),
+        },
+        {
+          text: 'Oficina BugCup',
+          href: getPermalink('/landing/dicas-bugcup'),
+        },
+      ],
+    },
   ],
-  //actions: [{ text: 'Horários', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Propor Oficina', href: 'https://forms.gle/c9S5NcBaS7oicTJZ8' }],
 };
 
 export const footerData = {
   links: [
+    // {
+    //   title: 'Product',
+    //   links: [
+    //     { text: 'Features', href: '#' },
+    //     { text: 'Security', href: '#' },
+    //     { text: 'Team', href: '#' },
+    //     { text: 'Enterprise', href: '#' },
+    //     { text: 'Customer stories', href: '#' },
+    //     { text: 'Pricing', href: '#' },
+    //     { text: 'Resources', href: '#' },
+    //   ],
+    // },
     {
-      title: 'Product',
+      title: "Oficinas",
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Python', href: getPermalink('/landing/python-essentials') },
+        { text: 'Git', href: getPermalink('/landing/git-essentials') },
+        { text: 'BugCup', href: getPermalink('/landing/dicas-bugcup') },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Comunidade',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Monitorias', href: getPermalink('/#monitorias') },
+        { text: 'Oficinas', href: getPermalink('/#oficinas') },
+        { text: 'FAQs', href: getPermalink('/#faqs') },
+        { text: 'Sobre Nós', href: getPermalink('/about') },
       ],
     },
     {
-      title: 'Support',
+      title: 'Contato',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Email', href: 'mailto:horadocodigo.fw@iffarroupilha.edu.br' },
+        { text: 'Instagram', href: '#' },
+        { text: 'Facebook', href: '#' },
+        { text: 'Github', href: 'https://github.com/dbreskovit/A-Hora-do-Codigo' },
       ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+    }
+
   ],
   secondaryLinks: [
     { text: 'Termos de Uso', href: getPermalink('/terms') },
