@@ -95,7 +95,7 @@ export const headerData = {
       text: 'Blog',
       links: [
         {
-          text: 'Todos os Posts',
+          text: 'Todos',
           href: getBlogPermalink(),
         },
         // {
