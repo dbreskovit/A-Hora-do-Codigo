@@ -81,6 +81,7 @@ export const headerData = {
     {
       text: 'Oficinas Realizadas',
       links: [
+        { text: 'Oficina Pygame', href: getPermalink('/landing/pygame-essentials') },
         {
           text: 'Oficina Python',
           href: getPermalink('/landing/python-essentials'),
@@ -137,6 +138,7 @@ export const footerData = {
     {
       title: "Oficinas",
       links: [
+        { text: 'Pygame', href: getPermalink('/landing/pygame-essentials') },
         { text: 'Python', href: getPermalink('/landing/python-essentials') },
         { text: 'Git', href: getPermalink('/landing/git-essentials') },
         { text: 'BugCup', href: getPermalink('/landing/dicas-bugcup') },
